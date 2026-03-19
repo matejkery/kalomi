@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kontakt | KaLomi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-kontakt">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="KaLomi logo" class="logo-img" />
+        <span class="logo-text">KaLomi - masáže</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Úvod</a>
+        <a href="typy-masazi.html" class="nav-link">Typy masáží</a>
+        <a href="cennik.html" class="nav-link">Cenník</a>
+        <a href="kontakt.html" class="nav-link active">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="contact-info-section">
+    <div class="contact-intro">
+      <p class="contact-intro-lead">Rada vás privítam vo svojom masérskom štúdiu, ktoré sa nachádza v priestoroch posilňovne SILÁK pri veľkom parkovisku v&nbsp;Banskej Štiavnici, kde je prvá hodina státia bezplatná – potom sa platí 2&nbsp;€/hod.</p>
+      <p class="contact-intro-text">Ak máte záujem o masáž, potrebujete poradiť pri výbere vhodného typu masáže alebo sa len chcete opýtať na voľné termíny, pokojne ma kontaktujte. Napíšte mi alebo zavolajte a spolu nájdeme čas, ktorý vám bude najviac vyhovovať. V prípade rezervácie vyplnením formulára alebo e‑mailom sa vám ozvem čo najskôr späť - dovtedy je rezervácia nezáväzná.</p>
+    </div>
+    <div class="contact-info-section-inner animate-on-scroll">
+      <div class="contact-info-card">
+        <p class="contact-info-row"><img src="images/mail.svg" alt="" class="contact-info-icon" /><a href="mailto:katarinkakery@gmail.com">katarinkakery@gmail.com</a></p>
+        <p class="contact-info-row"><img src="images/phone.svg" alt="" class="contact-info-icon" /><a href="tel:+421949657546">+421 949 657 546</a></p>
+        <p class="contact-info-row"><img src="images/adresa.svg" alt="" class="contact-info-icon" /> Mládežnícka 24, 969 01 Banská Štiavnica</p>
+        <p class="contact-info-row contact-info-row-ico">IČO: 57 528 373</p>
+      </div>
+      <div class="contact-map-wrap">
+        <div id="contact-map-canvas" class="contact-map" title="Mapa – Mládežnícka 24, 969 01 Banská Štiavnica"></div>
+      </div>
+    </div>
+    <div class="contact-form-overlap">
+      <div class="reservation-form-card">
+            <h2 class="reservation-form-title">Rezervácia</h2>
+            <form id="reservation-form" class="reservation-form" action="https://formspree.io/f/mzdjeyzd" method="post" autocomplete="on">
+              <input type="hidden" name="_subject" value="Nová rezervácia - KaLomi" />
+              <input type="hidden" name="Trvanie masáže" id="res-duration-display" value="" />
+              <div class="reservation-field">
+                <label for="res-name" class="reservation-label">Meno</label>
+                <input type="text" id="res-name" name="name" class="reservation-input" placeholder="Vaše meno" required />
+              </div>
+              <div class="reservation-field">
+                <label for="res-phone" class="reservation-label">Telefónne číslo</label>
+                <input type="tel" id="res-phone" name="phone" class="reservation-input" placeholder="+421 ..." autocomplete="tel" />
+              </div>
+              <div class="reservation-field">
+                <label for="res-email" class="reservation-label">E-mail</label>
+                <input type="email" id="res-email" name="email" class="reservation-input" placeholder="vas@email.sk" autocomplete="email" required />
+              </div>
+              <div class="reservation-field">
+                <label for="res-service" class="reservation-label">Typ služby</label>
+                <select id="res-service" name="service" class="reservation-input reservation-select" required>
+                  <option value="">Vyberte typ masáže</option>
+                  <option value="lomi">Havajská masáž Lomi–lomi</option>
+                  <option value="lavove-kamene">Lávové kamene</option>
+                  <option value="antistres">Antistresová masáž hlavy</option>
+                  <option value="lymfaticka">Lymfatická masáž</option>
+                  <option value="reflexna">Reflexná masáž chodidiel</option>
+                  <option value="klasicka">Klasická masáž</option>
+                  <option value="myofascialne">Mäkké a myofasciálne techniky</option>
+                </select>
+              </div>
+              <div class="reservation-field">
+                <label for="res-duration" class="reservation-label">Trvanie masáže</label>
+                <select id="res-duration" name="duration" class="reservation-input reservation-select" required disabled>
+                  <option value="">Najprv vyberte typ služby</option>
+                </select>
+              </div>
+              <div class="reservation-field">
+                <label for="res-note" class="reservation-label">Poznámka</label>
+                <textarea id="res-note" name="note" class="reservation-input reservation-textarea" placeholder="Voliteľné poznámky k rezervácii" rows="4"></textarea>
+              </div>
+              <button type="submit" class="reservation-submit">Potvrdiť rezerváciu</button>
+            </form>
+          </div>
+    </div>
+  </section>
+
+  <p class="contact-gallery-title animate-on-scroll">
+    Priestory
+  </p>
+
+  <div class="contact-gallery animate-on-scroll">
+    <a class="contact-gallery-item animate-on-scroll-child" href="images/priestor1.jpg" data-full-src="images/priestor1.jpg">
+      <img src="images/priestor1.jpg" alt="Priestor 1" loading="lazy" />
+      <span class="contact-gallery-plus" aria-hidden="true">+</span>
+    </a>
+    <a class="contact-gallery-item animate-on-scroll-child" href="images/priestor2.jpg" data-full-src="images/priestor2.jpg">
+      <img src="images/priestor2.jpg" alt="Priestor 2" loading="lazy" />
+      <span class="contact-gallery-plus" aria-hidden="true">+</span>
+    </a>
+    <a class="contact-gallery-item animate-on-scroll-child" href="images/priestor3.jpg" data-full-src="images/priestor3.jpg">
+      <img src="images/priestor3.jpg" alt="Priestor 3" loading="lazy" />
+      <span class="contact-gallery-plus" aria-hidden="true">+</span>
+    </a>
+    <a class="contact-gallery-item animate-on-scroll-child" href="images/priestor4.jpg" data-full-src="images/priestor4.jpg">
+      <img src="images/priestor4.jpg" alt="Priestor 4" loading="lazy" />
+      <span class="contact-gallery-plus" aria-hidden="true">+</span>
+    </a>
+  </div>
+
+  <div class="contact-lightbox" id="contactLightbox" aria-hidden="true">
+    <button class="contact-lightbox-close" id="contactLightboxClose" type="button" aria-label="Zavrieť">×</button>
+    <img class="contact-lightbox-img" id="contactLightboxImg" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    (function() {
+      // Pre plnú funkčnosť (terrain, zoom na Ctrl+scroll, panovanie) pridaj Google Maps API kľúč:
+      // https://console.cloud.google.com/google/maps-apis/ → Povoliť "Maps JavaScript API" → Vytvoriť kľúč
+      var apiKey = '';
+      var el = document.getElementById('contact-map-canvas');
+      if (!el) return;
+      var mapUrl = 'https://www.google.com/maps?q=Ml%C3%A1de%C5%BEn%C3%ADcka+24,+969+01+Bansk%C3%A1+%C5%A0tiavnica';
+      var center = { lat: 48.4587, lng: 18.8928 };
+
+      function initMap() {
+        var map = new google.maps.Map(el, {
+          center: center,
+          zoom: 16,
+          gestureHandling: 'cooperative',
+          zoomControl: true,
+          zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_CENTER },
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            position: google.maps.ControlPosition.TOP_RIGHT,
+            mapTypeIds: ['roadmap', 'satellite', 'terrain', 'hybrid']
+          },
+          streetViewControl: true,
+          fullscreenControl: true,
+          scaleControl: true,
+          scrollwheel: true,
+          draggable: true,
+          disableDoubleClickZoom: false,
+          styles: [{ featureType: 'poi', stylers: [{ visibility: 'simplified' }] }]
+        });
+        new google.maps.Marker({ position: center, map: map, title: 'Mládežnícka 24, 969 01 Banská Štiavnica' });
+      }
+
+      if (!apiKey) {
+        // Bez API kľúča sa zobrazí len iframe – bez prepínania terénu a bez zoomu na Ctrl+scroll.
+        el.outerHTML = '<iframe class="contact-map" src="' + mapUrl + '&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa – Mládežnícka 24, 969 01 Banská Štiavnica"></iframe>';
+        return;
+      }
+
+      if (typeof google !== 'undefined' && google.maps) { initMap(); return; }
+      var s = document.createElement('script');
+      s.src = 'https://maps.googleapis.com/maps/api/js?key=' + apiKey + '&callback=initContactMap';
+      s.async = true; s.defer = true;
+      window.initContactMap = initMap;
+      document.head.appendChild(s);
+    })();
+  </script>
+  <script>
+    // Clickable thumbnail lightbox for Priestor images.
+    (function () {
+      var thumbnails = document.querySelectorAll(".contact-gallery-item");
+      var lightbox = document.getElementById("contactLightbox");
+      var lightboxImg = document.getElementById("contactLightboxImg");
+      var closeBtn = document.getElementById("contactLightboxClose");
+
+      if (!thumbnails.length || !lightbox || !lightboxImg || !closeBtn) return;
+
+      function open(fullSrc, alt) {
+        lightboxImg.src = fullSrc;
+        lightboxImg.alt = alt || "";
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function close() {
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+        // Keep src to allow quick re-open; no-op if you prefer clearing:
+        // lightboxImg.src = "";
+      }
+
+      thumbnails.forEach(function (a) {
+        a.addEventListener("click", function (e) {
+          e.preventDefault();
+          var fullSrc = a.getAttribute("data-full-src") || a.getAttribute("href");
+          var alt = "";
+          var img = a.querySelector("img");
+          if (img && img.alt) alt = img.alt;
+          if (fullSrc) open(fullSrc, alt);
+        });
+      });
+
+      closeBtn.addEventListener("click", close);
+
+      lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) close();
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && lightbox.classList.contains("is-open")) {
+          close();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

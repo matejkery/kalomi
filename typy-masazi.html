@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Typy masáží | KaLomi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-typy-masazi">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="KaLomi logo" class="logo-img" />
+        <span class="logo-text">KaLomi - masáže</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Úvod</a>
+        <a href="typy-masazi.html" class="nav-link active">Typy masáží</a>
+        <a href="cennik.html" class="nav-link">Cenník</a>
+        <a href="kontakt.html" class="nav-link">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="massage-slider-section massage-slider-section--under-nav animate-on-scroll">
+      <div class="slider-dots-wrap">
+        <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slide navigácia">
+          <button type="button" class="slider-dot active" data-index="0" aria-label="Havajská masáž Lomi–lomi" aria-selected="true"></button>
+          <button type="button" class="slider-dot" data-index="1" aria-label="Lávové kamene" aria-selected="false"></button>
+          <button type="button" class="slider-dot" data-index="2" aria-label="Antistresová masáž hlavy" aria-selected="false"></button>
+          <button type="button" class="slider-dot" data-index="3" aria-label="Reflexná masáž chodidiel" aria-selected="false"></button>
+          <button type="button" class="slider-dot" data-index="4" aria-label="Lymfatická masáž" aria-selected="false"></button>
+          <button type="button" class="slider-dot" data-index="5" aria-label="Klasická masáž" aria-selected="false"></button>
+          <button type="button" class="slider-dot" data-index="6" aria-label="Mäkké a myofasciálne techniky" aria-selected="false"></button>
+        </div>
+      </div>
+      <div class="slider-current-info">
+        <h2 class="slider-current-name" id="sliderCurrentName">Havajská masáž Lomi–lomi</h2>
+        <p class="slider-current-desc" id="sliderCurrentDesc">Hlboká relaxácia a regenerácia tela aj duše</p>
+      </div>
+      <div class="slider-row">
+        <button type="button" class="slider-arrow slider-arrow-prev" aria-label="Predchádzajúci">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="slider-long-desc-wrap">
+          <div class="slider-long-desc-current" id="sliderLongDescCurrent"></div>
+        </div>
+        <div class="slider-images-col">
+          <div class="massage-slider">
+            <div class="slider-inner">
+              <div class="slider-track" id="sliderTrack">
+                <div class="slider-slide" data-title="Havajská masáž Lomi–lomi" data-desc="Hlboká relaxácia a regenerácia tela aj duše">
+                  <img src="images/Lomilomi.jpg" alt="Havajská masáž Lomi–lomi" class="slider-thumb" />
+                  <div class="slider-long-desc" aria-hidden="true">
+                    <p>Perla medzi masážami <span class="highlight-lomi">Havajská masáž Lomi – lomi</span> „milujúce ruky“ je charakteristická dlhými plynulými rytmickými ťahmi dlaní a predlaktí s využitím váhy a ťažiska tela. Samotný rytmus vlny (prílivu a odlivu) sa stáva súčasťou vnútorného naladenia maséra.</p>
+                    <p>Je to jedna z najviac uvoľňujúcich relaxačných masáží, intenzívne uvoľňuje svalové napätie a stimuluje krvný aj lymfatický obeh.</p>
+                    <p>V spojení s láskavou energiou prijatia harmonizuje telo aj dušu, vyvoláva pozitívne emócie a umožňuje hlbokú relaxáciu. Odporúča sa pri vyčerpanosti, psychickej záťaži a je ideálna pre regeneráciu tela po fyzickej záťaži.</p>
+                  </div>
+                </div>
+                <div class="slider-slide" data-title="Lávové kamene /Hot stones/" data-desc="Liečivá sila tepla kameňov">
+                  <img src="images/lavovekamene.jpg" alt="Lávové kamene /Hot stones/" class="slider-thumb" />
+                  <div class="slider-long-desc" aria-hidden="true">
+                    <p><span class="highlight-lomi">Havajská masáž Lomi – lomi</span> v kombinácii s terapeutickou silou tepla <span class="highlight-lomi">Lávových kameňov</span>.</p> <p> Nahriate čadičové kamene majú schopnosť absorbovať, udržiavať a následne odovzdávať teplo, ktoré rozširuje cievy, čím sa zvyšuje prekrvenie pokožky, podkožia a prísun kyslíka do tkanív.</p>
+                    <p>Teplo kameňov preniká hlboko do tkanív, uvoľňuje napätie, stuhnuté svaly a kĺby. Pomáha zmierňovať chronické bolesti. Masáž podporuje tok lymfy v tele, detoxikáciu organizmu a zmierňuje prejavy celulitídy.</p>
+                  </div>
+                </div>
+                <div class="slider-slide" data-title="Antistresová masáž hlavy" data-desc="Uvoľnenie napätia v oblasti hlavy, šije a tváre">
+                  <img src="images/hlava.jpg" alt="Antistresová masáž hlavy" class="slider-thumb" />
+                  <div class="slider-long-desc" aria-hidden="true">
+                    <p><span class="highlight-lomi">Antistresová masáž hlavy</span> je zameraná na premasírovanie a uvoľnenie svalov v oblasti hlavy, krčnej chrbtice, šije, ramien, tváre a dekoltu.</p>
+                    <p>Robí sa zľahka, jemne v rovnomernom rytme.</p>
+                    <p>Zlepšuje prekrvenie pokožky hlavy, podporuje rast vlasov, pomáha pri bolestiach hlavy, migréne.</p>
+                    <p>Uvoľňuje nahromadené napätie a stres, podporuje lepší spánok.</p>
+                  </div>
+                </div>
+                <div class="slider-slide" data-title="Reflexná masáž chodidiel" data-desc="Regenerácia tela reflexne cez chodidlá">
+                  <img src="images/chodidla.jpg" alt="Reflexná masáž chodidiel" class="slider-thumb" />
+                  <div class="slider-long-desc" aria-hidden="true">
+                    <p>Na chodidlách sa nachádzajú mnohé nervové zakončenia, ktoré sú prepojené s vnútornými a vonkajšími orgánmi v tele prostredníctvom energetických dráh.</p>
+                    <p><span class="highlight-lomi">Reflexná masáž chodidiel</span> využíva tlak a trenie reflexných zón na nohách, ktoré zodpovedajú konkrétnym vnútorným orgánom a častiam tela. Masážou sa docieli ich stimulácia a naštartujú sa samoliečiace procesy.</p>
+                    <p>Masáž zároveň reflexne pozitívne vplýva aj na činnosť endokrinných žliaz, na krvný obeh, tok lymfy a imunitný systém. Uvoľňuje napätie svalov a šliach na chodidlách.</p>
+                    <p>V 90 minútovej variante je zahrnutá aj klasická masáž nôh.</p>
+                  </div>
+                </div>
+                <div class="slider-slide" data-title="Lymfatická masáž (manuálna lymfodrenáž)" data-desc="Podpora lymfatického systému">
+                  <img src="images/lymfo.jpg" alt="Lymfatická masáž" class="slider-thumb" />
+                  <div class="slider-long-desc" aria-hidden="true">
+                    <p><span class="highlight-lomi">Manuálna lymfodrenáž</span> je jemná technika zameraná na podporu funkcie lymfatického systému, ktorý podobne ako cievny systém prechádza celým telom. Nemá však vlastnú pumpu, preto je odkázaný na pohyb svalov, dýchanie alebo vonkajšiu stimuláciu.</p>
+                    <p>Lymfatický systém odvádza tkanivový mok naspäť do krvného obehu. Pomáha telu zbaviť sa odpadových látok a nahromadených toxínov. Je dôležitou súčasťou imunitného systému.</p>
+                    <p>Masáž sa vykonáva pomaly, jemným tlakom s cieľom uvoľniť lymfatické uzliny a zlepšiť prietok lymfy v celom tele. Robí sa bez použitia oleja a v porovnaní s inými technikami je časovo náročnejšia. Zlepšuje prekrvenie, uľavuje žilovému systému, pomáha pri pocite ťažkých nôh. Zmierňuje prejavy celulitídy.</p>
+                    <p>Je vysoko účinná na zmiernenie opuchov. Pomáha pri regenerácii organizmu po fyzickej záťaži.</p>
+                  </div>
+                </div>
+                <div class="slider-slide" data-title="Klasická masáž" data-desc="Uvoľnenie a regenerácia svalov">
+                  <img src="images/klasik.jpg" alt="Klasická masáž" class="slider-thumb" />
+                  <div class="slider-long-desc" aria-hidden="true">
+                    <p><span class="highlight-lomi">Klasická masáž</span> je základom všetkých masáží. Uvoľňuje stuhnuté, bolestivé a preťažené svaly a napomáha ich regenerácii. Zlepšuje prekrvenie tkanív, čím sa do svalov dostáva viac kyslíka a urýchľuje odplavovanie odpadových látok.</p>
+                    <p>Odbúrava stres, napätie a napomáha k celkovej relaxácii.</p>
+                    <p>Môže mať upokojujúci alebo tonizačný účinok v závislosti od intenzity a výberu masérskych hmatov (trenie, vytieranie, roztieranie, hnetenie a tepanie).</p>
+                  </div>
+                </div>
+                <div class="slider-slide" data-title="Mäkké a myofasciálne techniky" data-desc="Uvoľnenie podkožia a spojivových tkanív">
+                  <img src="images/fascia.jpg" alt="Mäkké a myofasciálne techniky" class="slider-thumb" />
+                  <div class="slider-long-desc" aria-hidden="true">
+                    <p><span class="highlight-lomi">Mäkké a myofasciálne techniky</span> sú zamerané na uvoľňovanie, prekrvenie a obnovu funkcií mäkkých tkanív – kože, podkožia a spojivových tkanív – fascií.</p>
+                    <p>Vykonávajú sa podľa potreby jemnejším alebo silnejším – hlbším tlakom bez použitia oleja, čím reflexne pôsobia na príslušné body.</p>
+                    <p>Techniky sú zamerané na uvoľnenie krčnej chrbtice, blokácií chrbta v medzilopatkovej a bedrovej oblasti. Odstraňujú blokády z jednostranného preťažovania, či nesprávnych pohybových stereotypov. Pomáhajú znižovať chronické napätie svalov a zvyšujú rozsah pohybu.</p>
+                    <p>Pomáhajú pri bolestiach hlavy a migréne. V 90 minútovej variante je zahrnutá aj klasická masáž chrbta.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="slider-arrow slider-arrow-next" aria-label="Ďalší">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+      <div class="slider-cta-wrap">
+        <label for="slider-duration" class="slider-cta-label">Vyberte trvanie:</label>
+        <select id="slider-duration" class="slider-cta-select" aria-label="Vyberte trvanie a cenu"></select>
+        <a href="kontakt.html" class="slider-cta-btn" id="sliderRezervujBtn">REZERVUJ</a>
+      </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="slider.js"></script>
+</body>
+</html>
