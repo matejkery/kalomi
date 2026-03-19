@@ -965,15 +965,87 @@
   }
 
   /* Contact page: info section under navbar, then form */
-  /* Contact page: load animation (like other subpages) */
-  .page-kontakt .contact-intro {
-    animation: softFadeInUp 0.7s ease-out 0.15s both;
+  /* Contact page: stable load animation for split columns */
+  @keyframes contactColumnReveal {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  .page-kontakt .contact-info-section-inner {
-    animation: softFadeInUp 0.7s ease-out 0.35s both;
+  .page-kontakt .contact-col-left {
+    animation: contactColumnReveal 0.55s ease-out both;
   }
-  .page-kontakt .reservation-form-card {
-    animation: softFadeInUp 0.7s ease-out 0.5s both;
+  .page-kontakt .contact-col-right {
+    animation: contactColumnReveal 0.55s ease-out 0.12s both;
+  }
+  .contact-split-section {
+    padding: calc(80px + 3.5rem) 24px 18px;
+  }
+  .contact-split-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+  }
+  .contact-col-left .contact-intro {
+    max-width: none;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+  .contact-col-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-col-left .contact-info-section-inner {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 28px;
+  }
+  .contact-col-left .contact-info-section-inner .contact-info-card {
+    flex: 1 1 240px;
+    min-width: 0;
+  }
+  .contact-col-left .contact-info-section-inner .contact-map-wrap {
+    flex: 0 1 220px;
+    max-width: 220px;
+  }
+  .contact-col-left .contact-info-section-inner .contact-map-wrap .contact-map {
+    height: 130px;
+    min-height: 130px;
+  }
+  .contact-col-left .contact-info-row {
+    font-size: 14px;
+    margin: 0 0 12px;
+  }
+  .contact-col-left .contact-info-row a {
+    overflow-wrap: anywhere;
+  }
+  .contact-col-left .contact-gallery-title {
+    margin: 26px 0 10px;
+  }
+  .contact-col-left .contact-gallery {
+    margin: 0;
+  }
+  .contact-col-right {
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    overflow: hidden;
+  }
+  .contact-col-right .reservation-form-card {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 36px 30px 40px;
   }
 
   .contact-info-section {
@@ -999,7 +1071,7 @@
     font-family: "Playfair Display", serif;
     font-size: 20px;
     font-weight: 600;
-    margin: 0 0 4px;
+    margin: 0 0 14px;
   }
   .contact-intro-text {
     font-size: 15px;
@@ -1340,6 +1412,15 @@
   .reservation-submit:focus-visible {
     outline: 2px solid #a7936a;
     outline-offset: 2px;
+  }
+  @media (max-width: 1100px) {
+    .contact-split-section {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .contact-split-container {
+      flex-direction: column;
+    }
   }
   /* Kontakt: make the reservation form drop under the text earlier */
   @media (max-width: 1350px) {

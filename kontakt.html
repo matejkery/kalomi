@@ -28,91 +28,93 @@
     </div>
   </header>
 
-  <section class="contact-info-section">
-    <div class="contact-intro">
-      <p class="contact-intro-lead">Rada vás privítam vo svojom masérskom štúdiu, ktoré sa nachádza v priestoroch posilňovne SILÁK pri veľkom parkovisku v&nbsp;Banskej Štiavnici, kde je prvá hodina státia bezplatná – potom sa platí 2&nbsp;€/hod.</p>
-      <p class="contact-intro-text">Ak máte záujem o masáž, potrebujete poradiť pri výbere vhodného typu masáže alebo sa len chcete opýtať na voľné termíny, pokojne ma kontaktujte. Napíšte mi alebo zavolajte a spolu nájdeme čas, ktorý vám bude najviac vyhovovať. V prípade rezervácie vyplnením formulára alebo e‑mailom sa vám ozvem čo najskôr späť - dovtedy je rezervácia nezáväzná.</p>
-    </div>
-    <div class="contact-info-section-inner animate-on-scroll">
-      <div class="contact-info-card">
-        <p class="contact-info-row"><img src="images/mail.svg" alt="" class="contact-info-icon" /><a href="mailto:katarinkakery@gmail.com">katarinkakery@gmail.com</a></p>
-        <p class="contact-info-row"><img src="images/phone.svg" alt="" class="contact-info-icon" /><a href="tel:+421949657546">+421 949 657 546</a></p>
-        <p class="contact-info-row"><img src="images/adresa.svg" alt="" class="contact-info-icon" /> Mládežnícka 24, 969 01 Banská Štiavnica</p>
-        <p class="contact-info-row contact-info-row-ico">IČO: 57 528 373</p>
-      </div>
-      <div class="contact-map-wrap">
-        <div id="contact-map-canvas" class="contact-map" title="Mapa – Mládežnícka 24, 969 01 Banská Štiavnica"></div>
-      </div>
-    </div>
-    <div class="contact-form-overlap">
-      <div class="reservation-form-card">
-            <h2 class="reservation-form-title">Rezervácia</h2>
-            <form id="reservation-form" class="reservation-form" action="https://formspree.io/f/mzdjeyzd" method="post" autocomplete="on">
-              <input type="hidden" name="_subject" value="Nová rezervácia - KaLomi" />
-              <input type="hidden" name="Trvanie masáže" id="res-duration-display" value="" />
-              <div class="reservation-field">
-                <label for="res-name" class="reservation-label">Meno</label>
-                <input type="text" id="res-name" name="name" class="reservation-input" placeholder="Vaše meno" required />
-              </div>
-              <div class="reservation-field">
-                <label for="res-phone" class="reservation-label">Telefónne číslo</label>
-                <input type="tel" id="res-phone" name="phone" class="reservation-input" placeholder="+421 ..." autocomplete="tel" />
-              </div>
-              <div class="reservation-field">
-                <label for="res-email" class="reservation-label">E-mail</label>
-                <input type="email" id="res-email" name="email" class="reservation-input" placeholder="vas@email.sk" autocomplete="email" required />
-              </div>
-              <div class="reservation-field">
-                <label for="res-service" class="reservation-label">Typ služby</label>
-                <select id="res-service" name="service" class="reservation-input reservation-select" required>
-                  <option value="">Vyberte typ masáže</option>
-                  <option value="lomi">Havajská masáž Lomi–lomi</option>
-                  <option value="lavove-kamene">Lávové kamene</option>
-                  <option value="antistres">Antistresová masáž hlavy</option>
-                  <option value="lymfaticka">Lymfatická masáž</option>
-                  <option value="reflexna">Reflexná masáž chodidiel</option>
-                  <option value="klasicka">Klasická masáž</option>
-                  <option value="myofascialne">Mäkké a myofasciálne techniky</option>
-                </select>
-              </div>
-              <div class="reservation-field">
-                <label for="res-duration" class="reservation-label">Trvanie masáže</label>
-                <select id="res-duration" name="duration" class="reservation-input reservation-select" required disabled>
-                  <option value="">Najprv vyberte typ služby</option>
-                </select>
-              </div>
-              <div class="reservation-field">
-                <label for="res-note" class="reservation-label">Poznámka</label>
-                <textarea id="res-note" name="note" class="reservation-input reservation-textarea" placeholder="Voliteľné poznámky k rezervácii" rows="4"></textarea>
-              </div>
-              <button type="submit" class="reservation-submit">Potvrdiť rezerváciu</button>
-            </form>
+  <section class="contact-split-section">
+    <div class="services-container contact-split-container">
+      <div class="services-col services-col-left contact-col-left">
+        <div class="contact-intro">
+          <p class="contact-intro-lead">Rada vás privítam vo svojom masérskom štúdiu, ktoré sa nachádza v priestoroch posilňovne SILÁK pri veľkom parkovisku v&nbsp;Banskej Štiavnici, kde je prvá hodina státia bezplatná – potom sa platí 2&nbsp;€/hod.</p>
+          <p class="contact-intro-text">Ak máte záujem o masáž, potrebujete poradiť pri výbere vhodného typu masáže alebo sa len chcete opýtať na voľné termíny, pokojne ma kontaktujte. Napíšte mi alebo zavolajte a spolu nájdeme čas, ktorý vám bude najviac vyhovovať. V prípade rezervácie vyplnením formulára alebo e‑mailom sa vám ozvem čo najskôr späť - dovtedy je rezervácia nezáväzná.</p>
+        </div>
+        <p class="contact-gallery-title">
+          Priestory
+        </p>
+        <div class="contact-gallery">
+          <a class="contact-gallery-item" href="images/priestor1.jpg" data-full-src="images/priestor1.jpg">
+            <img src="images/priestor1.jpg" alt="Priestor 1" loading="lazy" />
+            <span class="contact-gallery-plus" aria-hidden="true">+</span>
+          </a>
+          <a class="contact-gallery-item" href="images/priestor2.jpg" data-full-src="images/priestor2.jpg">
+            <img src="images/priestor2.jpg" alt="Priestor 2" loading="lazy" />
+            <span class="contact-gallery-plus" aria-hidden="true">+</span>
+          </a>
+          <a class="contact-gallery-item" href="images/priestor3.jpg" data-full-src="images/priestor3.jpg">
+            <img src="images/priestor3.jpg" alt="Priestor 3" loading="lazy" />
+            <span class="contact-gallery-plus" aria-hidden="true">+</span>
+          </a>
+          <a class="contact-gallery-item" href="images/priestor4.jpg" data-full-src="images/priestor4.jpg">
+            <img src="images/priestor4.jpg" alt="Priestor 4" loading="lazy" />
+            <span class="contact-gallery-plus" aria-hidden="true">+</span>
+          </a>
+        </div>
+        <div class="contact-info-section-inner">
+          <div class="contact-info-card">
+            <p class="contact-info-row"><img src="images/mail.svg" alt="" class="contact-info-icon" /><a href="mailto:katarinkakery@gmail.com">katarinkakery@gmail.com</a></p>
+            <p class="contact-info-row"><img src="images/phone.svg" alt="" class="contact-info-icon" /><a href="tel:+421949657546">+421 949 657 546</a></p>
+            <p class="contact-info-row"><img src="images/adresa.svg" alt="" class="contact-info-icon" /> Mládežnícka 24, 969 01 Banská Štiavnica</p>
+            <p class="contact-info-row contact-info-row-ico">IČO: 57 528 373</p>
           </div>
+          <div class="contact-map-wrap">
+            <div id="contact-map-canvas" class="contact-map" title="Mapa – Mládežnícka 24, 969 01 Banská Štiavnica"></div>
+          </div>
+        </div>
+      </div>
+      <div class="services-col services-col-right contact-col-right">
+        <div class="reservation-form-card">
+          <h2 class="reservation-form-title">Rezervácia</h2>
+          <form id="reservation-form" class="reservation-form" action="https://formspree.io/f/mzdjeyzd" method="post" autocomplete="on">
+            <input type="hidden" name="_subject" value="Nová rezervácia - KaLomi" />
+            <input type="hidden" name="Trvanie masáže" id="res-duration-display" value="" />
+            <div class="reservation-field">
+              <label for="res-name" class="reservation-label">Meno</label>
+              <input type="text" id="res-name" name="name" class="reservation-input" placeholder="Vaše meno" required />
+            </div>
+            <div class="reservation-field">
+              <label for="res-phone" class="reservation-label">Telefónne číslo</label>
+              <input type="tel" id="res-phone" name="phone" class="reservation-input" placeholder="+421 ..." autocomplete="tel" />
+            </div>
+            <div class="reservation-field">
+              <label for="res-email" class="reservation-label">E-mail</label>
+              <input type="email" id="res-email" name="email" class="reservation-input" placeholder="vas@email.sk" autocomplete="email" required />
+            </div>
+            <div class="reservation-field">
+              <label for="res-service" class="reservation-label">Typ služby</label>
+              <select id="res-service" name="service" class="reservation-input reservation-select" required>
+                <option value="">Vyberte typ masáže</option>
+                <option value="lomi">Havajská masáž Lomi–lomi</option>
+                <option value="lavove-kamene">Lávové kamene</option>
+                <option value="antistres">Antistresová masáž hlavy</option>
+                <option value="lymfaticka">Lymfatická masáž</option>
+                <option value="reflexna">Reflexná masáž chodidiel</option>
+                <option value="klasicka">Klasická masáž</option>
+                <option value="myofascialne">Mäkké a myofasciálne techniky</option>
+              </select>
+            </div>
+            <div class="reservation-field">
+              <label for="res-duration" class="reservation-label">Trvanie masáže</label>
+              <select id="res-duration" name="duration" class="reservation-input reservation-select" required disabled>
+                <option value="">Najprv vyberte typ služby</option>
+              </select>
+            </div>
+            <div class="reservation-field">
+              <label for="res-note" class="reservation-label">Poznámka</label>
+              <textarea id="res-note" name="note" class="reservation-input reservation-textarea" placeholder="Voliteľné poznámky k rezervácii" rows="4"></textarea>
+            </div>
+            <button type="submit" class="reservation-submit">Potvrdiť rezerváciu</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
-
-  <p class="contact-gallery-title animate-on-scroll">
-    Priestory
-  </p>
-
-  <div class="contact-gallery animate-on-scroll">
-    <a class="contact-gallery-item animate-on-scroll-child" href="images/priestor1.jpg" data-full-src="images/priestor1.jpg">
-      <img src="images/priestor1.jpg" alt="Priestor 1" loading="lazy" />
-      <span class="contact-gallery-plus" aria-hidden="true">+</span>
-    </a>
-    <a class="contact-gallery-item animate-on-scroll-child" href="images/priestor2.jpg" data-full-src="images/priestor2.jpg">
-      <img src="images/priestor2.jpg" alt="Priestor 2" loading="lazy" />
-      <span class="contact-gallery-plus" aria-hidden="true">+</span>
-    </a>
-    <a class="contact-gallery-item animate-on-scroll-child" href="images/priestor3.jpg" data-full-src="images/priestor3.jpg">
-      <img src="images/priestor3.jpg" alt="Priestor 3" loading="lazy" />
-      <span class="contact-gallery-plus" aria-hidden="true">+</span>
-    </a>
-    <a class="contact-gallery-item animate-on-scroll-child" href="images/priestor4.jpg" data-full-src="images/priestor4.jpg">
-      <img src="images/priestor4.jpg" alt="Priestor 4" loading="lazy" />
-      <span class="contact-gallery-plus" aria-hidden="true">+</span>
-    </a>
-  </div>
 
   <div class="contact-lightbox" id="contactLightbox" aria-hidden="true">
     <button class="contact-lightbox-close" id="contactLightboxClose" type="button" aria-label="Zavrieť">×</button>
