@@ -89,17 +89,23 @@ if (navToggle && mainNav) {
   }
 })();
 
-// Ensure duration (Trvanie masáže) is sent with form – disabled fields are not submitted
+// Formspree: skryté polia s čitateľným textom (trvanie + celý názov masáže); selecty bez name používajú len interné value
 (function () {
   var form = document.getElementById("reservation-form");
   var durationSelect = document.getElementById("res-duration");
   var durationDisplay = document.getElementById("res-duration-display");
-  if (!form || !durationSelect) return;
+  var serviceSelect = document.getElementById("res-service");
+  var serviceDisplay = document.getElementById("res-service-display");
+  if (!form || !durationSelect || !durationDisplay) return;
   form.addEventListener("submit", function () {
-    if (durationSelect.value) {
-      durationSelect.disabled = false;
-      if (durationDisplay && durationSelect.options[durationSelect.selectedIndex]) {
-        durationDisplay.value = durationSelect.options[durationSelect.selectedIndex].text;
+    var dIdx = durationSelect.selectedIndex;
+    if (dIdx >= 0 && durationSelect.options[dIdx]) {
+      durationDisplay.value = durationSelect.options[dIdx].text.trim();
+    }
+    if (serviceSelect && serviceDisplay && serviceSelect.value) {
+      var sIdx = serviceSelect.selectedIndex;
+      if (sIdx >= 0 && serviceSelect.options[sIdx]) {
+        serviceDisplay.value = serviceSelect.options[sIdx].text.trim();
       }
     }
   });

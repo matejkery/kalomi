@@ -71,16 +71,17 @@
       <div class="services-col services-col-right contact-col-right">
         <div class="reservation-form-card">
           <h2 class="reservation-form-title">Rezervácia</h2>
-          <form id="reservation-form" class="reservation-form" action="https://formspree.io/f/mzdjeyzd" method="post" autocomplete="on">
+          <form id="reservation-form" class="reservation-form" action="https://formsubmit.co/matejkokery@gmail.com" method="post" autocomplete="on">
             <input type="hidden" name="_subject" value="Nová rezervácia - KaLomi" />
             <input type="hidden" name="Trvanie masáže" id="res-duration-display" value="" />
+            <input type="hidden" name="Masáž" id="res-service-display" value="" />
             <div class="reservation-field">
               <label for="res-name" class="reservation-label">Meno</label>
-              <input type="text" id="res-name" name="name" class="reservation-input" placeholder="Vaše meno" required />
+              <input type="text" id="res-name" name="Meno" class="reservation-input" placeholder="Vaše meno" required />
             </div>
             <div class="reservation-field">
               <label for="res-phone" class="reservation-label">Telefónne číslo</label>
-              <input type="tel" id="res-phone" name="phone" class="reservation-input" placeholder="+421 ..." autocomplete="tel" />
+              <input type="tel" id="res-phone" name="Mobil" class="reservation-input" placeholder="+421 ..." autocomplete="tel" />
             </div>
             <div class="reservation-field">
               <label for="res-email" class="reservation-label">E-mail</label>
@@ -88,7 +89,7 @@
             </div>
             <div class="reservation-field">
               <label for="res-service" class="reservation-label">Typ služby</label>
-              <select id="res-service" name="service" class="reservation-input reservation-select" required>
+              <select id="res-service" class="reservation-input reservation-select" required aria-required="true">
                 <option value="">Vyberte typ masáže</option>
                 <option value="lomi">Havajská masáž Lomi–lomi</option>
                 <option value="lavove-kamene">Lávové kamene</option>
@@ -101,13 +102,13 @@
             </div>
             <div class="reservation-field">
               <label for="res-duration" class="reservation-label">Trvanie masáže</label>
-              <select id="res-duration" name="duration" class="reservation-input reservation-select" required disabled>
+              <select id="res-duration" class="reservation-input reservation-select" required disabled aria-required="true">
                 <option value="">Najprv vyberte typ služby</option>
               </select>
             </div>
             <div class="reservation-field">
               <label for="res-note" class="reservation-label">Poznámka</label>
-              <textarea id="res-note" name="note" class="reservation-input reservation-textarea" placeholder="Voliteľné poznámky k rezervácii" rows="4"></textarea>
+              <textarea id="res-note" name="Poznámka" class="reservation-input reservation-textarea" placeholder="Voliteľné poznámky k rezervácii" rows="4"></textarea>
             </div>
             <button type="submit" class="reservation-submit">Potvrdiť rezerváciu</button>
           </form>
