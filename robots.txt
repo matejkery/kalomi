@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://matejkery.github.io/kalomi/sitemap.xml
+Sitemap: https://kalomimasaze.sk/sitemap.xml
