@@ -71,8 +71,14 @@
       <div class="services-col services-col-right contact-col-right">
         <div class="reservation-form-card">
           <h2 class="reservation-form-title">Rezervácia</h2>
+          <div class="reservation-success" id="reservation-success" role="status" aria-live="polite" hidden>
+            <strong>Rezervácia odoslaná</strong>
+            Ďakujeme – ozvem sa čo najskôr.
+          </div>
           <form id="reservation-form" class="reservation-form" action="https://formsubmit.co/matejkokery@gmail.com" method="post" autocomplete="on">
             <input type="hidden" name="_subject" value="Nová rezervácia - KaLomi" />
+            <!-- FormSubmit: presmerovanie späť na túto stránku (úplná URL – vyžaduje FormSubmit) -->
+            <input type="hidden" name="_next" id="res-form-next" value="" />
             <input type="hidden" name="Trvanie masáže" id="res-duration-display" value="" />
             <input type="hidden" name="Masáž" id="res-service-display" value="" />
             <div class="reservation-field">
@@ -112,6 +118,27 @@
             </div>
             <button type="submit" class="reservation-submit">Potvrdiť rezerváciu</button>
           </form>
+          <script>
+            (function () {
+              var nextEl = document.getElementById("res-form-next");
+              if (nextEl) {
+                var u = window.location.href.split("#")[0];
+                var q = u.indexOf("?");
+                if (q !== -1) u = u.slice(0, q);
+                nextEl.value = u + "?rezervacia=odoslana";
+              }
+              var params = new URLSearchParams(window.location.search);
+              if (params.get("rezervacia") === "odoslana") {
+                var box = document.getElementById("reservation-success");
+                if (box) {
+                  box.removeAttribute("hidden");
+                }
+                if (window.history && window.history.replaceState) {
+                  window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+                }
+              }
+            })();
+          </script>
         </div>
       </div>
     </div>

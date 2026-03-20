@@ -1335,6 +1335,27 @@
     text-align: center;
     margin: 0 0 28px;
   }
+  .reservation-success {
+    margin: -8px 0 22px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: rgba(76, 125, 90, 0.14);
+    border: 1px solid rgba(76, 125, 90, 0.38);
+    color: #2d4a35;
+    font-size: 15px;
+    line-height: 1.55;
+    text-align: center;
+  }
+  .reservation-success[hidden] {
+    display: none !important;
+  }
+  .reservation-success strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e3d28;
+  }
   .reservation-form {
     display: flex;
     flex-direction: column;
