@@ -15,6 +15,19 @@
     background-attachment: scroll;
   }
 
+  /* SEO / accessibility: nadpis H1 len pre vyhľadávače a čítačky */
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
   /* Calm, spa-like animations */
   @keyframes fadeInUp {
     from {
@@ -910,6 +923,57 @@
   .slider-dot:focus-visible {
     outline: 2px solid #a7936a;
     outline-offset: 2px;
+  }
+
+  /* Typy masáží – mobil: CTA pod sebou, väčšie ťukacie ciele */
+  @media (max-width: 640px) {
+    .slider-cta-wrap {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 14px;
+      margin-top: 22px;
+    }
+    .slider-cta-label {
+      text-align: center;
+      width: 100%;
+    }
+    .slider-cta-btn {
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 16px 24px;
+    }
+  }
+  @media (max-width: 768px) {
+    .massage-slider-section {
+      overflow-x: hidden;
+    }
+    .slider-dots-wrap {
+      padding-bottom: 16px;
+    }
+    .slider-dots {
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 10px;
+      max-width: 100%;
+      padding: 0 8px;
+    }
+    .slider-dot {
+      width: 12px;
+      height: 12px;
+      min-width: 12px;
+      min-height: 12px;
+    }
+    .slider-current-name {
+      font-size: 20px;
+      padding: 0 8px;
+      word-break: break-word;
+      hyphens: auto;
+    }
+    .slider-long-desc-current {
+      font-size: 15px;
+      line-height: 1.75;
+    }
   }
 
   /* Subpages (Typy masáží, Cenník, Kontakt) */
@@ -1856,15 +1920,39 @@
 
     /* Slider (typy masáží) */
     .massage-slider-section {
-      padding: 28px 16px;
+      padding: 24px 12px 28px;
     }
     .massage-slider-section--under-nav {
-      margin-top: 120px;
-      padding-left: 16px;
-      padding-right: 16px;
+      margin-top: 112px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .slider-current-info {
+      margin-bottom: 18px;
+    }
+    .slider-current-name {
+      font-size: 18px;
+      line-height: 1.35;
+    }
+    .slider-current-desc {
+      font-size: 14px;
+      padding: 0 4px;
     }
     .slider-thumb {
-      height: 220px;
+      height: min(52vw, 240px);
+      max-height: 240px;
+    }
+    .slider-arrow {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+    }
+    .slider-row {
+      gap: 16px;
+    }
+    .slider-long-desc-wrap {
+      margin-top: 16px;
     }
     .slider-cta-select {
       width: 100%;
