@@ -198,6 +198,32 @@
     .main-nav.open {
       display: flex;
     }
+    /* Responsive navbar: remove underline and highlight the active choice */
+    .main-nav.open .nav-link {
+      display: block;
+      width: 100%;
+      padding: 14px 0;
+      border-radius: 0;
+      text-align: center;
+      line-height: 1;
+      /* center vertically within the full-width row */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-nav.open .nav-link::after {
+      content: none;
+      display: none;
+    }
+    .main-nav.open .nav-link:hover {
+      background: rgba(167, 147, 106, 0.14);
+      color: #3d3530;
+    }
+    .main-nav.open .nav-link.active {
+      background: rgba(154, 135, 114, 0.26);
+      box-shadow: inset 0 0 0 1px rgba(167, 147, 106, 0.42);
+      font-weight: 700;
+    }
     .nav-toggle {
       display: flex;
     }
@@ -845,6 +871,39 @@
     }
     .slider-thumb {
       max-width: 100%;
+    }
+  }
+
+  /* Typy masáží (mobil): daj šípky vedľa seba */
+  @media (max-width: 900px) {
+    .page-typy-masazi .massage-slider-section--under-nav .slider-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "images images"
+        "prev next"
+        "longdesc longdesc";
+      align-items: center;
+      justify-items: center;
+      gap: 16px;
+    }
+    .page-typy-masazi .massage-slider-section--under-nav .slider-arrow-prev {
+      grid-area: prev;
+      justify-self: end;
+    }
+    .page-typy-masazi .massage-slider-section--under-nav .slider-arrow-next {
+      grid-area: next;
+      justify-self: start;
+    }
+    .page-typy-masazi .massage-slider-section--under-nav .slider-images-col {
+      grid-area: images;
+      width: 100%;
+      justify-self: center;
+    }
+    .page-typy-masazi .massage-slider-section--under-nav .slider-long-desc-wrap {
+      grid-area: longdesc;
+      width: 100%;
+      margin-top: 0;
     }
   }
   .slider-long-desc-current {
@@ -1957,6 +2016,36 @@
     .slider-cta-select {
       width: 100%;
       min-width: 0;
+    }
+
+    /* Cenník (mobile): lepšia čitateľnosť cien */
+    .price-list {
+      margin: 0.75rem 0 0;
+      padding: 0;
+    }
+    .price-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+      padding: 0.9rem 0.85rem;
+      border-bottom: none;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.65);
+      margin: 0 0 12px;
+      width: 100%;
+    }
+    .price-name {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .price-value {
+      font-size: 14px;
+      text-align: left;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      line-height: 1.6;
     }
 
     /* Reservation form */
