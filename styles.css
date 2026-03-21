@@ -1086,6 +1086,26 @@
     color: #8b7a5a;
     border-bottom-color: #8b7a5a;
   }
+  .cennik-payment-note {
+    color: #5c5349;
+    font-weight: 700; /* Lato is loaded at 300/400/700 — no 600 file, avoids glyph mismatch */
+    margin: 0 0 0.75rem;
+    letter-spacing: 0.02em;
+  }
+  /* Same brown as navbar .logo-text (KaLomi - masáže) */
+  .cennik-payment-note-brand {
+    color: #9a8772;
+  }
+  .cennik-notes-centered {
+    text-align: center;
+    margin-top: 0.35rem;
+  }
+  .cennik-notes-centered .cennik-payment-note {
+    margin-bottom: 0.65em;
+  }
+  .cennik-notes-centered p:last-child {
+    margin-bottom: 0;
+  }
 
   /* Contact page: info section under navbar, then form */
   /* Contact page: stable load animation for split columns */
