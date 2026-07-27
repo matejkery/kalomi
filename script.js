@@ -36,8 +36,8 @@ if (navToggle && mainNav) {
     "lomi": [ [30], [60], [90], [120] ],
     "lavove-kamene": [ [60], [90], [120] ],
     "antistres": [ [30], [60] ],
-    "lymfaticka": [ [30], [60], [90, "+ nohy"] ],
-    "reflexna": [ [60], [90], [120] ],
+    "lymfaticka": [ [60], [90], [120] ],
+    "reflexna": [ [30], [60] ],
     "klasicka": [ [30], [60], [90] ],
     "myofascialne": [ [30], [60], [90, "+ klasická masáž chrbta"] ]
   };

@@ -1106,6 +1106,17 @@
   .cennik-notes-centered p:last-child {
     margin-bottom: 0;
   }
+  .cennik-poukaz {
+    margin: 1.15rem auto 0;
+    max-width: 280px;
+  }
+  .cennik-poukaz img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 28px rgba(61, 53, 48, 0.14), 0 2px 8px rgba(61, 53, 48, 0.06);
+  }
 
   /* Contact page: info section under navbar, then form */
   /* Contact page: stable load animation for split columns */
